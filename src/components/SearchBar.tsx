@@ -79,7 +79,7 @@ const SearchBar: Component<SearchBarProps> = () => {
               )}
             </For>
           </select>
-          <button class="inline-flex uppercase items-center justify-between py-[10px] px-[17px] gap-2.5 bg-secondary text-white rounded-[5px] max-h-[40px] transition-all ease-in-out delay-75 duration-150 hover:bg-opacity-80">
+          <button class="inline-flex uppercase items-center justify-between py-[10px] px-[17px] gap-2.5 bg-secondary text-white rounded-[5px] max-h-[40px] transition-colors ease-in-out delay-75 duration-150 hover:bg-opacity-80">
             <MagnifierGlass /> <p>Search</p>
           </button>
         </div>

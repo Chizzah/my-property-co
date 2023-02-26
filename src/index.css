@@ -65,13 +65,15 @@ input[type="number"] {
 }
 
 .background_slider .background_slide:nth-child(1) {
-  background-image: url("src/assets/img/home-hero-img-1.jpg");
+  background-image: url("/home-hero-img-1.jpg");
   animation-delay: 0s;
+  background-size: cover;
 }
 
 .background_slider .background_slide:nth-child(2) {
-  background-image: url("src/assets/img/home-hero-img-2.jpg");
+  background-image: url("/home-hero-img-2.jpg");
   animation-delay: -8.5s;
+  background-size: cover;
 }
 
 @keyframes slider {

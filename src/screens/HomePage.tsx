@@ -102,8 +102,8 @@ const ads = [
 const HomePage: Component = () => {
   return (
     <section>
-      <HomeHero />
-      <section class="text-center mb-[100px]">
+      {/* <HomeHero /> */}
+      {/* <section class="text-center mb-[100px]">
         <h1 class="font-bold text-[35px] text-primary mb-[45px]">
           Lorem ipsum dolor sit amet
         </h1>
@@ -142,7 +142,7 @@ const HomePage: Component = () => {
             )}
           </For>
         </div>
-      </section>
+      </section> */}
     </section>
   );
 };
