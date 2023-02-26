@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .rtl_select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; /* Remove default arrow */
+    background-image: url("/src/assets/svg/arrow.svg"); /* Add custom arrow */
+    background-position: left theme("spacing.2") center;
+    padding-left: theme("spacing.10");
+    padding-right: theme("spacing.3");
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 15px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.svg_arrow {
+  transform: rotate(90deg);
+}
+
+.background_slider {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.background_slider .background_slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slider 17s infinite;
+}
+
+.background_slider .background_slide:nth-child(1) {
+  background-image: url("src/assets/img/home-hero-img-1.jpg");
+  animation-delay: 0s;
+}
+
+.background_slider .background_slide:nth-child(2) {
+  background-image: url("src/assets/img/home-hero-img-2.jpg");
+  animation-delay: -8.5s;
+}
+
+@keyframes slider {
+  0%,
+  47%,
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  50% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  97% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
+
+.keen-slider:not([data-keen-slider-disabled]) {
+  align-content: flex-start;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+}
+.keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+}
+.keen-slider:not([data-keen-slider-disabled])[data-keen-slider-reverse] {
+  flex-direction: row-reverse;
+}
+.keen-slider:not([data-keen-slider-disabled])[data-keen-slider-v] {
+  flex-wrap: wrap;
+}
+.keen-slider:not([data-keen-slider-disabled])[data-keen-slider-moves] * {
+  pointer-events: none;
+}
+
+.slide {
+  height: 50vh;
+  color: text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  color: white;
+}
