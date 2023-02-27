@@ -4,7 +4,7 @@ Live website can be found at [my-property-co.netlify.app](https://my-property-co
 
 ## Bonus Question
 
-Bonus question can be viewed at [my-property-co.netlify.app/prop-data](https://my-property-co.netlify.app/prop-data) or inspect console to view console.log of bonus question.
+Bonus question answer can be viewed by inspecting the console.
 
 ## Usage
 
