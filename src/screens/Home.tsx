@@ -87,7 +87,7 @@ const ads = [
 const Home: Component = () => {
   return (
     <section>
-      <HomeHero />
+      {/* <HomeHero /> */}
       <section class="mx-8 mb-16 text-center lg:mb-[100px]">
         <h1 class="text-2xl mb-8 font-bold lg:text-[35px] text-primary lg:mb-[45px] font-cormorant-garamond">
           Lorem ipsum dolor sit amet
