@@ -30,13 +30,13 @@ const Slider: Component<SliderProps> = ({ children, total }) => {
       <br />
       <div>
         <button
-          class="inline-flex absolute top-1/2 -left-[110.54px]"
+          class="hidden lg:inline-flex absolute top-1/2 -left-[110.54px]"
           onClick={prev}
         >
           <ArrowPrev />
         </button>
         <button
-          class="inline-flex absolute top-1/2 -right-[110.54px]"
+          class="hidden lg:inline-flex absolute top-1/2 -right-[110.54px]"
           onClick={next}
         >
           <ArrowNext />

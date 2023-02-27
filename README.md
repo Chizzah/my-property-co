@@ -29,6 +29,10 @@ It correctly bundles Solid in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
+### `pnpm test` or `npm test if using npm` or `yarn test if using yarn`
+
+The application is using vitest for testing. I am testing the PropData function from the BONUS QUESTION provided with it.
+
 ## Deployment
 
 You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)

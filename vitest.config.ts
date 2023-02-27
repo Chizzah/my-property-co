@@ -5,7 +5,6 @@ export default defineConfig({
   plugins: [solidPlugin()],
   build: {
     target: "esnext",
-    polyfillDynamicImport: false,
   },
   test: {
     globals: true,
@@ -13,7 +12,7 @@ export default defineConfig({
     transformMode: {
       web: [/\.jsx?$/],
     },
-    setupFiles: "./setupVitest.js",
+    // setupFiles: "./setupVitest.js",
   },
   resolve: {
     conditions: ["development", "browser"],
