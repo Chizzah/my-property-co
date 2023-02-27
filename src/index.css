@@ -60,6 +60,24 @@
     padding-left: theme("spacing.10");
     padding-right: theme("spacing.3");
   }
+
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply text-xs border-gray-300 rounded-[5px] shadow-sm focus:border-secondary focus:ring-secondary lg:text-base;
+  }
 }
 
 p {

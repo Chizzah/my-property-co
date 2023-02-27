@@ -1,5 +1,6 @@
 import type { Component } from "solid-js";
 import { createSignal, For } from "solid-js";
+import { A } from "@solidjs/router";
 
 import Logo from "./svg/Logo";
 import Menu from "./svg/Menu";
@@ -42,7 +43,7 @@ const Header: Component = () => {
             <For each={links} fallback={<div>Loading...</div>}>
               {(item) => (
                 <li class="hover:text-secondary">
-                  <a href={item.href}>{item.label}</a>
+                  <A href={item.href}>{item.label}</A>
                 </li>
               )}
             </For>
@@ -54,7 +55,7 @@ const Header: Component = () => {
           <For each={links} fallback={<div>Loading...</div>}>
             {(item) => (
               <li class="text-white hover:text-primary py-2 transition-colors ease-in-out delay-75 duration-150">
-                <a href={item.href}>{item.label}</a>
+                <A href={item.href}>{item.label}</A>
               </li>
             )}
           </For>

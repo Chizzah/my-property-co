@@ -21,8 +21,8 @@ export function PropData(num: number[]) {
   return result.join(" ");
 }
 
-// const PropDataNumbers: Component = () => {
-//   return <p>{PropData(num)}</p>;
-// };
+const PropDataNumbers: Component = () => {
+  return <p class="text-xs font-semibold">{PropData(num)}</p>;
+};
 
-// export default PropDataNumbers;
+export default PropDataNumbers;

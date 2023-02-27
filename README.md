@@ -1,3 +1,11 @@
+## Live Website
+
+Live website can be found at [my-property-co.netlify.app](https://my-property-co.netlify.app)
+
+## Bonus Question
+
+Bonus question can be viewed at [my-property-co.netlify.app/prop-data](https://my-property-co.netlify.app/prop-data) or inspect console to view console.log of bonus question.
+
 ## Usage
 
 Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.

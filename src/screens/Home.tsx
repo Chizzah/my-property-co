@@ -84,7 +84,7 @@ const ads = [
   },
 ];
 
-const HomePage: Component = () => {
+const Home: Component = () => {
   return (
     <section>
       <HomeHero />
@@ -132,4 +132,4 @@ const HomePage: Component = () => {
   );
 };
 
-export default HomePage;
+export default Home;
