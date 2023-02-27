@@ -9,9 +9,9 @@
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"),
+    src: url("/fonts/open-sans-v34-latin-regular.woff2") format("woff2"),
       /* Chrome 36+, Opera 23+, Firefox 39+ */
-        url("../fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url("/fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* open-sans-600 - latin */
   @font-face {
@@ -19,9 +19,9 @@
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
-    src: url("../fonts/open-sans-v34-latin-600.woff2") format("woff2"),
+    src: url("/fonts/open-sans-v34-latin-600.woff2") format("woff2"),
       /* Chrome 36+, Opera 23+, Firefox 39+ */
-        url("../fonts/open-sans-v34-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url("/fonts/open-sans-v34-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* open-sans-700 - latin */
   @font-face {
@@ -29,9 +29,9 @@
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/open-sans-v34-latin-700.woff2") format("woff2"),
+    src: url("/fonts/open-sans-v34-latin-700.woff2") format("woff2"),
       /* Chrome 36+, Opera 23+, Firefox 39+ */
-        url("../fonts/open-sans-v34-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url("/fonts/open-sans-v34-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* cormorant-garamond-700 - latin */
   @font-face {
@@ -39,9 +39,9 @@
     font-family: "Cormorant Garamond";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/cormorant-garamond-v16-latin-700.woff2") format("woff2"),
+    src: url("/fonts/cormorant-garamond-v16-latin-700.woff2") format("woff2"),
       /* Chrome 36+, Opera 23+, Firefox 39+ */
-        url("../fonts/cormorant-garamond-v16-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url("/fonts/cormorant-garamond-v16-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
   body {
