@@ -5,7 +5,7 @@ Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnp
 This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
 
 ```bash
-$ npm install # or pnpm install or yarn install
+$ pnpm install #npm install or yarn install will work as well
 ```
 
 ### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
@@ -14,14 +14,14 @@ $ npm install # or pnpm install or yarn install
 
 In the project directory, you can run:
 
-### `npm dev` or `npm start`
+### `pnpm dev` or `pnpm start` or `npm dev if using npm` or `yarn dev if using yarn`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 
-### `npm run build`
+### `pnpm build` or `npm run build if using npm` or `yarn build if using yarn`
 
 Builds the app for production to the `dist` folder.<br>
 It correctly bundles Solid in production mode and optimizes the build for the best performance.
