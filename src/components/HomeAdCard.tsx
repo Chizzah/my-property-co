@@ -8,7 +8,7 @@ type HomeAdCardProps = {
 
 const HomeAdCard: Component<HomeAdCardProps> = ({ src, title, content }) => {
   return (
-    <div class="mb-4 xl:w-[300px] border border-[#BDBDBD]">
+    <div class="mb-4 xl:w-[300px] border border-[#BDBDBD] hover:animate-wiggle cursor-pointer">
       <img
         class="w-full h-52 lg:h-[225px]"
         src={src}

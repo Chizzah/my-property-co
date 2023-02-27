@@ -32,7 +32,7 @@ type FeaturedPropertyProps = {
 
 const FeaturedProperty: Component<FeaturedPropertyProps> = ({ item }) => {
   return (
-    <div class="w-[600px] lg:w-full flex flex-col lg:flex-row border border-[#BDBDBD]">
+    <div class="w-[600px] shadow lg:w-full flex flex-col lg:flex-row border border-[#BDBDBD] special_hover">
       <div class="relative lg:w-[66%]">
         {item?.tag ? (
           <div class="absolute top-0 left-0 px-[10px] py-[5px] bg-primary text-white uppercase ">

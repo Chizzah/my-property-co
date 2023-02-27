@@ -12,21 +12,6 @@ import contactUsImg from "../assets/img/contact-us-img.jpg";
 import followUsImg from "../assets/img/follow-us-img.jpg";
 import Slider from "../components/Slider";
 
-// console.log(
-//   alert(
-//     JSON.stringify(
-//       {
-//         "1": "make it responsive and make it responsive remember fonts and assets from assignment folder",
-//         "2": "remember fonts",
-//         "3": "assets from assignment folder",
-//         "4": "change color form button outlines",
-//       },
-//       null,
-//       2
-//     )
-//   )
-// );
-
 const properties = [
   {
     tag: "sole mandate",
