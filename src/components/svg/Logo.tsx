@@ -2,7 +2,13 @@ import type { Component } from "solid-js";
 
 const Logo: Component = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="247" height="51" fill="none">
+    <svg
+      class="scale-75 lg:scale-100"
+      xmlns="http://www.w3.org/2000/svg"
+      width="247"
+      height="51"
+      fill="none"
+    >
       <path fill="#19263A" d="M0 0h246.673v50.589H0z" />
       <path
         fill="#FC495D"

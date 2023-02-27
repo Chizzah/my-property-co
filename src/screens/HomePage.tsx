@@ -89,7 +89,7 @@ const ads = [
   },
   {
     src: contactUsImg,
-    title: "Contac Us",
+    title: "Contact Us",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
@@ -102,24 +102,24 @@ const ads = [
 const HomePage: Component = () => {
   return (
     <section>
-      {/* <HomeHero /> */}
-      {/* <section class="text-center mb-[100px]">
-        <h1 class="font-bold text-[35px] text-primary mb-[45px]">
+      <HomeHero />
+      <section class="mx-8 mb-16 text-center lg:mb-[100px]">
+        <h1 class="text-2xl mb-8 font-bold lg:text-[35px] text-primary lg:mb-[45px] font-cormorant-garamond">
           Lorem ipsum dolor sit amet
         </h1>
-        <p class="text-accent1  mx-auto w-5/12 mb-[40px]">
+        <p class=" mb-8 text-accent1 text-xs lg:text-base lg:mx-auto lg:w-5/12 lg:mb-[40px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu
           scelerisque dui. Proin porta consectetur euismod. Duis pharetra
           dapibus blandit. Aenean lobortis orci a egestas eleifend. Pellentesque
           faucibus mi et interdum molestie. Quisque in diam felis. Ut vitae
           elementum leo.
         </p>
-        <button class="inline-flex bg-secondary text-white rounded-[5px] px-[15px] py-[8.5px]  hover:text-secondary hover:bg-white border-2 transition-colors ease-in-out delay-75 duration-150 border-white hover:border-secondary">
+        <button class="inline-flex text-xs lg:text-base bg-secondary text-white rounded-[5px] px-[15px] py-[8.5px]  hover:text-secondary hover:bg-white border-2 transition-colors ease-in-out delay-75 duration-150 border-white hover:border-secondary">
           Read more
         </button>
       </section>
-      <section class="mx-auto w-8/12 mb-[162px]">
-        <h2 class="mb-[44px] font-bold text-[35px] text-center">
+      <section class="mx-8 mb-32 lg:mx-auto lg:w-8/12 lg:mb-[162px]">
+        <h2 class="text-2xl mb-8 lg:mb-[44px] font-bold lg:text-[35px] text-center">
           Featured Properties
         </h2>
         <div class="relative">
@@ -130,8 +130,8 @@ const HomePage: Component = () => {
           </Slider>
         </div>
       </section>
-      <section class="mx-auto w-8/12 mb-[116px]">
-        <div class="flex justify-between">
+      <section class="mx-8 mb-16 lg:mx-auto lg:w-8/12 lg:mb-[116px]">
+        <div class="lg:flex lg:justify-between">
           <For each={ads} fallback={<div>Loading...</div>}>
             {(item) => (
               <HomeAdCard
@@ -142,7 +142,7 @@ const HomePage: Component = () => {
             )}
           </For>
         </div>
-      </section> */}
+      </section>
     </section>
   );
 };

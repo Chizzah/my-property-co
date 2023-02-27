@@ -19,15 +19,13 @@ const moreSearchOptions = [
   { value: "optionTwo", label: "Option Two" },
 ];
 
-const numberOfProperties = 124;
-
 const SearchBar: Component<SearchBarProps> = () => {
   return (
-    <form class="mx-auto w-[1000px] p-[30px] bg-primary bg-opacity-[0.7] rounded-[5px]">
-      <section class="mb-[15px] flex items-center w-full gap-2.5">
+    <form class="w-full mx-4 p-4 lg:mx-auto lg:w-[1000px] lg:p-[30px] bg-primary bg-opacity-[0.7] rounded-[5px]">
+      <section class="lg:mb-[15px] flex flex-col lg:flex-row lg:items-center lg:w-full lg:gap-2.5 space-y-4 lg:space-y-0 mb-4">
         <select
           name="buyOrRent"
-          class="w-[90px] rounded-[5px] text-accent1 fill-primary max-h-[40px]"
+          class="lg:w-[90px] rounded-[5px] text-accent1 fill-primary lg:max-h-[40px] text-xs lg:text-base"
         >
           <For each={buyOrRentOptions} fallback={<div>Loading...</div>}>
             {(item) => <option value={item.value}>{item.label}</option>}
@@ -35,7 +33,7 @@ const SearchBar: Component<SearchBarProps> = () => {
         </select>
         <select
           name="residentialOrCommercial"
-          class="w-[330px] rounded-[5px] text-accent1 fill-primary max-h-[40px]"
+          class="lg:w-[330px] rounded-[5px] text-accent1 fill-primary lg:max-h-[40px] text-xs lg:text-base"
         >
           <For
             each={residentialOrCommercialOptions}
@@ -48,13 +46,13 @@ const SearchBar: Component<SearchBarProps> = () => {
           type="text"
           name="location"
           placeholder="Type Area or Suburb Name"
-          class="w-[500px] rounded-[5px] placeholder-accent1 max-h-[40px] text-accent1"
+          class="lg:w-[500px] rounded-[5px] placeholder-accent1 lg:max-h-[40px] text-accent1 text-xs lg:text-base"
         />
       </section>
-      <section class="flex items-center justify-between">
-        <label class="relative inline-flex bg-transparent text-white rounded-[5px] max-h-[40px]">
+      <section class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+        <label class="w-full relative inline-flex bg-transparent text-white rounded-[5px] lg:max-h-[40px] mb-4 lg:mb-0">
           <input
-            class="py-[10px] px-[17px] pl-9 placeholder-white drop-shadow-md  rounded-[5px] bg-transparent"
+            class="w-full lg:w-auto py-[10px] px-[17px] pl-9 placeholder-white drop-shadow-md  rounded-[5px] bg-transparent text-xs lg:text-base"
             placeholder="Web Ref. Number Search"
             type="text"
           />
@@ -62,13 +60,13 @@ const SearchBar: Component<SearchBarProps> = () => {
             #
           </span>
         </label>
-        <div class="flex items-center gap-2.5">
-          <p class="font-semibold text-white">
-            {numberOfProperties} Properties
+        <div class="flex flex-col lg:flex-row lg:items-center lg:gap-2.5 space-y-4 lg:space-x-0">
+          <p class="font-semibold text-white text-xs lg:text-base">
+            124 Properties
           </p>
           <select
             name="residentialOrCommercial"
-            class="rtl_select rounded-[5px] bg-transparent text-white max-h-[40px]"
+            class="rtl_select rounded-[5px] bg-transparent text-white lg:max-h-[40px] text-xs lg:text-base"
           >
             <option class="text-black">More Search Options</option>
             <For each={moreSearchOptions} fallback={<div>Loading...</div>}>
@@ -79,8 +77,8 @@ const SearchBar: Component<SearchBarProps> = () => {
               )}
             </For>
           </select>
-          <button class="inline-flex uppercase items-center justify-between py-[10px] px-[17px] gap-2.5 bg-secondary text-white rounded-[5px] max-h-[40px] transition-colors ease-in-out delay-75 duration-150 hover:bg-opacity-80">
-            <MagnifierGlass /> <p>Search</p>
+          <button class="justify-center inline-flex uppercase items-center lg:justify-between py-[10px] px-[17px] gap-2.5 bg-secondary text-white rounded-[5px] max-h-[40px] transition-colors ease-in-out delay-75 duration-150 hover:bg-opacity-80 text-xs lg:text-base">
+            <MagnifierGlass /> <p class="text-xs lg:text-base">Search</p>
           </button>
         </div>
       </section>

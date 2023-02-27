@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js';
+import type { Component } from "solid-js";
 
 // put this somewhere else
 const num = Array.from({ length: 50 }, (_, i) => i + 1);
@@ -16,11 +16,13 @@ export function PropData(num: number[]) {
       result.push(n.toString());
     }
   }
-  return result.join(" ")
+
+  console.log(result.join(" "));
+  return result.join(" ");
 }
 
-const PropDataNumbers: Component = () => {
-  return <p>{PropData(num)}</p>;
-};
+// const PropDataNumbers: Component = () => {
+//   return <p>{PropData(num)}</p>;
+// };
 
-export default PropDataNumbers;
+// export default PropDataNumbers;

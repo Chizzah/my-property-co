@@ -6,7 +6,7 @@ import Header from "../components/Header";
 
 const MainLayout: Component<{ children: JSXElement }> = ({ children }) => {
   return (
-    <div class="relative flex flex-col w-full 2lg:min-w-[1440px] min-h-screen">
+    <div class="relative flex flex-col w-full 2lg:min-w-[1440px] min-h-screen font-open-sans">
       <Header />
       <Content>{children}</Content>
       <Footer />
