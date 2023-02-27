@@ -3,6 +3,7 @@ import type { Component } from "solid-js";
 // import IEASA from "./svg/IEASA";
 import EAAB from "../assets/img/eaab.png";
 import IEASA from "../assets/img/ieasa.png";
+import ImageWrapper from "./Image";
 import LiLink from "./LiLink";
 import Facebook from "./svg/Facebook";
 import PropData from "./svg/PropData";
@@ -13,18 +14,22 @@ const Footer: Component = () => {
   return (
     <footer class="bg-primary p-4 lg:px-[250px] lg:py-[70px] text-white text-xs">
       <section class="mb-12 flex items-center space-x-[30px]">
-        <img
-          class="w-16 lg:w-[87px]"
-          src={EAAB}
-          alt="eaab logo"
-          loading="lazy"
-        />
-        <img
-          class="w-16 lg:w-[125px]"
-          src={IEASA}
-          alt="ieasa logo"
-          loading="lazy"
-        />
+        <ImageWrapper>
+          <img
+            class="w-16 lg:w-[87px]"
+            src={EAAB}
+            alt="eaab logo"
+            loading="lazy"
+          />
+        </ImageWrapper>
+        <ImageWrapper>
+          <img
+            class="w-16 lg:w-[125px]"
+            src={IEASA}
+            alt="ieasa logo"
+            loading="lazy"
+          />
+        </ImageWrapper>
       </section>
       <section class="flex justify-between w-full lg:block">
         <section class="w-1/2 lg:flex lg:items-center text-xs lg:w-full">

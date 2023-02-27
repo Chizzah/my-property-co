@@ -6,6 +6,7 @@ import { formatLongDescription } from "../utils/formatStrings";
 import Bedroom from "./svg/Bedroom";
 import Bathroom from "./svg/Bathroom";
 import Garage from "./svg/Garage";
+import ImageWrapper from "./Image";
 
 type Agent = {
   src: string;
@@ -39,7 +40,9 @@ const FeaturedProperty: Component<FeaturedPropertyProps> = ({ item }) => {
             {item.tag}
           </div>
         ) : null}
-        <img class="w-full" src={item.src} alt={item.title} loading="lazy" />
+        <ImageWrapper>
+          <img class="w-full" src={item.src} alt={item.title} loading="lazy" />
+        </ImageWrapper>
       </div>
       <div class="py-8 px-4 lg:w-[34%] lg:pt-[33px] lg:pb-[39px] lg:px-10 flex flex-col justify-between">
         <div class="text-accent1 mb-4">
@@ -63,12 +66,14 @@ const FeaturedProperty: Component<FeaturedPropertyProps> = ({ item }) => {
           </p>
         </div>
         <div class="flex items-center space-x-2 lg:space-x-[18px]">
-          <img
-            class="scale-75 lg:scale-100"
-            src={item.agent.src}
-            alt={`${item.agent.firstName} ${item.agent.lastName}`}
-            loading="lazy"
-          />
+          <ImageWrapper>
+            <img
+              class="scale-75 lg:scale-100"
+              src={item.agent.src}
+              alt={`${item.agent.firstName} ${item.agent.lastName}`}
+              loading="lazy"
+            />
+          </ImageWrapper>
           <div class="text-right lg:text-left">
             <p class="text-xs lg:text-base font-semibold lg:mb-0.5">
               {item.agent.firstName} {item.agent.lastName}
