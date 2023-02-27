@@ -1,12 +1,10 @@
 import type { Component } from "solid-js";
-import { lazy } from "solid-js";
 import { Routes, Route } from "@solidjs/router";
 import { PropData } from "./components/PropDataNumbers";
 
 import MainLayout from "./layouts/MainLayout";
-
-const HomePage = lazy(() => import("./pages/HomePage"));
-const PropDataPage = lazy(() => import("./pages/PropDataPage"));
+import HomePage from "./pages/HomePage";
+import PropDataPage from "./pages/PropDataPage";
 
 const num = Array.from({ length: 50 }, (_, i) => i + 1);
 
